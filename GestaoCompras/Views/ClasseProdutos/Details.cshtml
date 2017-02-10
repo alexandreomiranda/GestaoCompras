@@ -1,0 +1,26 @@
+﻿@model GestaoCompras.Domain.Entities.ClasseProduto
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ClasseProduto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeClasse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeClasse)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ClasseProdutoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

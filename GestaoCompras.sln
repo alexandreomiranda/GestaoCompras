@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoCompras.MVC", "GestaoCompras\GestaoCompras.MVC.csproj", "{C02AC4B3-2820-48F9-85D8-D1BE61B3D7F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{F3144AC8-20A0-4BC8-A9D5-5981F7C18A26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Domain", "2 - Domain", "{82B6F607-C026-4AA2-88AF-6A5C83868BBD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Infra", "3 - Infra", "{7C414D35-FFD2-4642-9053-957CA913C613}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoCompras.Domain", "GestaoCompras.Domain\GestaoCompras.Domain.csproj", "{6961E401-3664-4839-90B4-7A1D71969010}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.1 - Data", "3.1 - Data", "{4C55E4D8-9621-4B6B-9675-EAFEB89A1CC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoCompras.Infra.Data", "GestaoCompras.Infra.Data\GestaoCompras.Infra.Data.csproj", "{FD896ACB-5C48-4FE9-A665-81299B533302}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{FCC2E617-5C7B-4D25-A446-88B4D2253CD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GestaoCompras.Application", "GestaoCompras.Application\GestaoCompras.Application.csproj", "{FEADB338-484C-4C3D-A722-651FE31D3355}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C02AC4B3-2820-48F9-85D8-D1BE61B3D7F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C02AC4B3-2820-48F9-85D8-D1BE61B3D7F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C02AC4B3-2820-48F9-85D8-D1BE61B3D7F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C02AC4B3-2820-48F9-85D8-D1BE61B3D7F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6961E401-3664-4839-90B4-7A1D71969010}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6961E401-3664-4839-90B4-7A1D71969010}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6961E401-3664-4839-90B4-7A1D71969010}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6961E401-3664-4839-90B4-7A1D71969010}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD896ACB-5C48-4FE9-A665-81299B533302}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD896ACB-5C48-4FE9-A665-81299B533302}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD896ACB-5C48-4FE9-A665-81299B533302}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD896ACB-5C48-4FE9-A665-81299B533302}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEADB338-484C-4C3D-A722-651FE31D3355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEADB338-484C-4C3D-A722-651FE31D3355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEADB338-484C-4C3D-A722-651FE31D3355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEADB338-484C-4C3D-A722-651FE31D3355}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C02AC4B3-2820-48F9-85D8-D1BE61B3D7F6} = {F3144AC8-20A0-4BC8-A9D5-5981F7C18A26}
+		{6961E401-3664-4839-90B4-7A1D71969010} = {82B6F607-C026-4AA2-88AF-6A5C83868BBD}
+		{4C55E4D8-9621-4B6B-9675-EAFEB89A1CC3} = {7C414D35-FFD2-4642-9053-957CA913C613}
+		{FD896ACB-5C48-4FE9-A665-81299B533302} = {4C55E4D8-9621-4B6B-9675-EAFEB89A1CC3}
+		{FEADB338-484C-4C3D-A722-651FE31D3355} = {FCC2E617-5C7B-4D25-A446-88B4D2253CD6}
+	EndGlobalSection
+EndGlobal

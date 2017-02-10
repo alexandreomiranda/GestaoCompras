@@ -1,0 +1,70 @@
+﻿@model GestaoCompras.Domain.Entities.SolicitacaoCompra
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SolicitacaoCompra</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Produto.NomeProduto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Produto.NomeProduto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataSolicitacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataSolicitacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UsuarioSolicitante)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UsuarioSolicitante)
+        </dd>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeptoSolicitante)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataLimiteRecebimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataLimiteRecebimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StatusSolicitacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StatusSolicitacao)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.SolicitacaoCompraId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

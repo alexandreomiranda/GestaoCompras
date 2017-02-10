@@ -1,0 +1,69 @@
+﻿@model IEnumerable<GestaoComprasCRUD.Models.SolicitacaoCompra>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Produto.NomeProduto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataSolicitacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UsuarioSolicitante)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DeptoSolicitante)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Quantidade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataLimiteRecebimento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StatusSolicitacao)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Produto.NomeProduto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataSolicitacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UsuarioSolicitante)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DeptoSolicitante)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Quantidade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataLimiteRecebimento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StatusSolicitacao)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.SolicitacaoCompraId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.SolicitacaoCompraId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.SolicitacaoCompraId })
+        </td>
+    </tr>
+}
+
+</table>

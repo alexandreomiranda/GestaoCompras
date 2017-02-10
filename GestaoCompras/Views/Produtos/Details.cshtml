@@ -1,0 +1,50 @@
+﻿@model GestaoCompras.Domain.Entities.Produto
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Produto</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ClasseProduto.NomeClasse)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClasseProduto.NomeClasse)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Unidade.NomeUnidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Unidade.NomeUnidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NomeProduto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomeProduto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescricaoProduto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescricaoProduto)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ProdutoId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
